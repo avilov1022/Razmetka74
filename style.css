@@ -565,7 +565,7 @@
     border: 7px solid white;
     border-radius: 5px;
     border-radius: 5px;
-    height: 578px;
+    /* height: 578px; */
 }
 
 
@@ -597,7 +597,7 @@
 .aboutUs__slide-text{
     max-width: 800px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 197%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
@@ -611,16 +611,92 @@
 }
 
 .aboutUs__swiper-pagination .swiper-pagination-bullet{
-    /* .swiper-pagination-bullet {
-        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-        height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
-        display: inline-block;
-        border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-    }*/
     background: var(--swiper-pagination-bullet-inactive-color, #fff);
     opacity: var(--swiper-pagination-bullet-inactive-opacity, 1); 
 }
 
 .aboutUs__swiper-pagination .swiper-pagination-bullet-active{
     background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+
+
+
+
+
+.types-section{
+    margin-top: 14px;
+}
+.types-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.swiper.types__swiper{
+    height: auto;
+}
+
+.types__swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.types__swiper__cards{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 29px;
+}
+
+.types__swiper__card{
+    width: 283px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.types__swiper__card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.types__swiper__card-title{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #213b43;
+}
+.types__swiper__card-image{
+    display: flex;
+    box-shadow: 5px 5px 7px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    height: 283px;
+    width: 283px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.types__swiper__card .button{
+    width: 100%;
+}
+
+.types__swiper-button-prev::after,
+.types__swiper-button-next::after{
+    color: #000;
+    transition: 200ms;
+}
+
+.types__swiper-button-prev:hover::after,
+.types__swiper-button-next:hover::after{
+    color: #5395A9;
 }
